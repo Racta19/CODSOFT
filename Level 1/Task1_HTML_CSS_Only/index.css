@@ -39,12 +39,19 @@
 
 li {
     margin: 0 0.75rem;
+    padding: 0.75rem;
     cursor: pointer;
+    border-bottom: 1px solid #c6c8d1;
 }
 
 a {
     text-decoration: none;
-    color: #2b2d31;
+    color: #302823;
+
+}
+
+li:hover{
+    border-bottom: 1px solid #302823;
 }
 
 
@@ -60,7 +67,7 @@ a {
     width: 32px;
     height: 4px;
     margin: 2px 0;
-    background-color: #313d57;;
+    background-color: #302823;;
 }
 
 /*Hero Section Styling*/
@@ -75,6 +82,7 @@ a {
     max-width: 100%;
     overflow: hidden;
     z-index: 1;
+    padding: 1rem 0;
 }
 
 .heroImg{
@@ -90,6 +98,7 @@ a {
     transform: translate(-50%, 50%);
     text-align: center;
     z-index: 2;
+    color: #302823;
 }
 .heroText h2{
     font-size: 4rem;
@@ -100,27 +109,158 @@ a {
 }
 
 /*Blog Styling*/
+.blogContainer{
+    background: #c6c8d1;
+    padding: 1rem;
+}
+
+.blogContainer h3{
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+
 .Blog{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 18px;
     background: #c6c8d1;
-    padding: 1%;
 }
 
 .blogItem{
-    border: 1px solid #313d57;
-    border-radius: 2%;
-    background: #2b2d31;
-    color: #c6c8d1;
+    border: 1px solid #c6c8d1;
+    border-radius: 6%;
+    background: #b5b7be;
+    color: #302823;
+    display: flex;
+    width: 100%;
 }
 
+.blogPic{
+    flex: 0.5;
+    width: 20px;
+    padding: 0.5rem;
+    border-radius: 18%;
+}
+
+.blogText{
+    flex: 1;
+    min-height: max-content;
+}
+
+.blogText h3{
+    font-weight: 200;
+    padding: 0.5rem;
+}
+
+.blogText p{
+    font-weight: 200;
+    padding: 0.5rem;
+    cursor: pointer;font-style: italic;
+}
+
+/*Service Styling*/
+
+.Services{
+    background: #c6c8d1;
+    padding: 1rem;
+}
+
+.Services h3{
+    text-align: center;
+    font-size: 1.7rem;
+    padding-bottom: 0.8rem;
+}
+
+.serviceGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 2fr));
+    gap: 10px;
+}
+
+.service{
+    border: 1px solid #b5b7be;
+    border-radius: 20px;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.service img{
+    width: 100%;
+}
+
+.serviceText{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    z-index: 2;
+    color: #302823;
+}
+.serviceText h4{
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+.serviceText p{
+    font-size: 1rem;
+}
+
+/*Testimonial Styling*/
+.Testimonials{
+    background: #c6c8d1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.Testimonials h3{
+    font-size: 1.7rem;
+    padding-bottom: 0.8rem;
+}
+
+.testimonialGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 2fr));
+    gap: 10px;
+}
+
+.testimonial{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.testimonial img{
+    width: 50%;
+    border-radius: 50%;
+    padding-right: 2%;
+}
+
+.testimonialText h4{
+    font-size: 1.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.testimonialText p{
+    font-size: 0.8rem;
+    max-width: 120px;
+}
+/*Footer Styling*/
+.footer{
+    background-color: #c6c8d1;
+    text-align: center;
+    padding: 1rem;
+}
 /*Media queries for Responsiveness*/
 @media screen and (max-width: 760px) {
     /*Navigation styles */
     .hamburger{
         display: flex;
     }
+
     .menuList{
         display: none;
         flex-direction: column;
@@ -129,6 +269,7 @@ a {
         left: 0;
         width: 100%;
     }
+
     .menuList.active{
         display:flex;
         flex-direction: column;
@@ -136,16 +277,19 @@ a {
         z-index: 1;
         opacity: 1;
     }
+
     .menuList li{
         margin: 0;
         padding: 0.5rem;
         align-items: center;
         cursor: pointer;
     }
+
     /*Hero Section Styling*/
     .heroText {
         padding: 0.5rem;
         top: 7%;
+        color: #302823;
     }
 
     .heroText h2 {
@@ -156,4 +300,60 @@ a {
     .heroText p {
         font-size: 0.9rem;
     }
+
+    /*Blog Styling*/
+    /*.blogItem{
+        width: 90%;
+    }*/
+    .blogText h3{
+        font-size: 1.2rem;
+        padding: 0.4rem;
+    }
+
+    .blogText p{
+        font-size: 0.8rem;
+        padding-bottom: 0.3rem;
+    }
+    /*Services Styling*/
+    /*.service{
+        width: 90%;
+    }*/
+    .serviceText{
+        top: 4%;
+    }
+    .serviceText h4 {
+        font-size: 1.6rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .serviceText p {
+        font-size: 0.8rem;
+    }
+}
+
+/*Scroll Kit to change the color of scoll, width*/
+body::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #302823;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #c6c8d1;
+}
+
+::-webkit-scrollbar-track:hover{
+    background: #c6c8d1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #c6c8d1;
 }
