@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav id="home" class="Navigation">
+        <h2 class="logo"><a href="#">Dan's Plumbing</a></h2>
+        <div class="mobileMenu">
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menuList">
+                <li><a href="">Home</a></li>
+                <li><a href="#hero">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#blog">Blogs</a></li>
+                <li><a href="#contact">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hero" class="Hero">
+        <div class="heroContainer">
+            <img class="heroImg" src="assets/HeroPhoto.jpg" alt="plumbing servie">
+            <div class="heroText">
+                <h2>Dans Pumbings</h2>
+                <p>We provide all Plumbing Services you may or may not need</p>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="Blog">
+        <div class="blogItem">
+            <h3>How to clean your Ac filter</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum, aperiam quidem nihil nisi nemo consequuntur exercitationem ducimus, molestias possimus architecto esse omnis labore fuga mollitia alias fugiat eveniet veniam!</p>
+        </div>
+        <div class="blogItem">
+            <h3>Which tools you should keep at your house at all times</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quaerat quasi nulla sit ut tempore omnis eaque laborum magnam libero quos dicta error in harum repellendus fugit ab? Culpa, vel.</p>
+        </div>
+        <div class="blogItem">
+            <h3>How to create an elbows with PVCs</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolor. Facere consequatur laudantium dolores nihil at modi non error temporibus quidem, facilis, ullam, tenetur exercitationem maxime excepturi labore illo possimus!</p>
+        </div>
+        <div class="blogItem">
+            <h3>Checks before buying fittings</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus eius quae delectus sapiente incidunt. Eveniet reiciendis maiores, sint nobis voluptatum perspiciatis eum. Ex numquam natus, quibusdam sapiente quos in inventore.</p>
+        </div>
+    </section>
+    <section id="service" class="Services">
+        <section>
+            <h4>Service 1</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque sapiente vel sunt non nesciunt? Consequatur laboriosam consequuntur.</p>
+        </section>
+        <section>
+            <h4>Service 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid pariatur et consequuntur, animi.</p>
+        </section>
+        <section>
+            <h4>service 3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis est laborum modi dolore iusto.</p>
+        </section>
+    </section>
+    <section id="testimonials" class="Testimonials">
+        <div>
+            <img src="" alt="peson1">
+            <div>
+                <h5>John Happy</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+        <div>
+            <img src="" alt="peson2">
+            <div>
+                <h5>Oliver barns</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+        <div>
+            <img src="" alt="peson3">
+            <div>
+                <h5>Martha Wayne</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+        <div>
+            <img src="" alt="peson4">
+            <div>
+               <h5>John Happy</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="Contact">
+        <label for="email">Your Email</label>
+        <input name="email" placeholder="email" type="email" />
+        <label for="textArea">Your Query</label>
+        <textarea name="textArea" placeholder="your query" ></textarea>
+        <input type="submit">
+    </section>
+    <footer class="footer">
+        <div>
+            <img src="" alt="logo">
+            <div>
+                &copy; 2023 Your Company. All rights reserved.
+            </div>
+        </div>
+        <div>
+            <a href=""><img src="" alt="twitter"></a>
+            <a href=""><img src="" alt="instagram"></a>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menuList = document.querySelector('.menuList');
+
+        hamburger.addEventListener('click', () => {
+            menuList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

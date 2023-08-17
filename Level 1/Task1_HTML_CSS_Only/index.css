@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* Navigation Bar Styling */
+.Navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #c6c8d1;
+    z-index: 1;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+    list-style: none;
+}
+.logo:hover {
+    cursor: pointer;
+}
+
+/* Navigation Menu Styling */
+.menuList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* Center-align the menu items */
+    justify-content: center;
+
+
+}
+
+li {
+    margin: 0 0.75rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2d31;
+}
+
+
+/*Additional Styles for creating hamburge menu*/
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.bar{
+    width: 32px;
+    height: 4px;
+    margin: 2px 0;
+    background-color: #313d57;;
+}
+
+/*Hero Section Styling*/
+.Hero{
+    position: relative;
+    background-color: #c6c8d1;
+    z-index: 0;
+}
+
+.heroContainer{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.heroImg{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+.heroText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    z-index: 2;
+}
+.heroText h2{
+    font-size: 4rem;
+    margin-bottom: 0.25rem;
+}
+.heroText p{
+    font-size: 2.5rem;
+}
+
+/*Blog Styling*/
+.Blog{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 18px;
+    background: #c6c8d1;
+    padding: 1%;
+}
+
+.blogItem{
+    border: 1px solid #313d57;
+    border-radius: 2%;
+    background: #2b2d31;
+    color: #c6c8d1;
+}
+
+/*Media queries for Responsiveness*/
+@media screen and (max-width: 760px) {
+    /*Navigation styles */
+    .hamburger{
+        display: flex;
+    }
+    .menuList{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+    .menuList.active{
+        display:flex;
+        flex-direction: column;
+        background: #c6c8d1 ;
+        z-index: 1;
+        opacity: 1;
+    }
+    .menuList li{
+        margin: 0;
+        padding: 0.5rem;
+        align-items: center;
+        cursor: pointer;
+    }
+    /*Hero Section Styling*/
+    .heroText {
+        padding: 0.5rem;
+        top: 7%;
+    }
+
+    .heroText h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .heroText p {
+        font-size: 0.9rem;
+    }
+}
