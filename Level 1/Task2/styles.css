@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation Styling*/
+.navigation{
+    display: flex;
+    padding: 1rem 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation h2 {
+    font-style: italic;
+    flex: 1;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.navigationLinks ul{
+    display: flex;
+    flex: 1;
+}
+
+.navigationLinks ul li{
+    padding: 0 1rem;
+}
+
+/*About Me Styling*/
+.aboutMe{
+    padding: 1rem 6rem;
+    align-items: center;
+    display: flex;
+}
+
+.aboutMeText{
+    flex: 1;
+}
+
+.aboutMe > img{
+    flex: 0.5;
+    width: 150px;
+    object-fit: cover;
+    padding-left: 20px;
+    border-radius: 50%;
+}
+
+.aboutMeName{
+    font-size: 32px;
+}
+
+.aboutMeBio{
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+.socialMedia{
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.socialMedia img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.aboutMeButton{
+    display: inline;
+    background: #d8d1d1;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Skills Styling*/
+
+.skills{
+    padding: 1rem 6rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.skillCard{
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillCard h4{
+    font-size: 20px;
+    padding-right: 1.5rem;
+}
+
+.profiencyContainer{
+    width: 100%;
+    border-radius: 5%;
+
+    overflow: hidden;
+    flex: 1;
+}
+
+.profiencyBar{
+    flex: 1;
+    height: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+    /*Bar values for each skill*/
+    .bar1{ width: 70%;}
+    .bar2{ width: 80%;}
+    .bar3{ width: 60%;}
+    .bar4{ width: 82%;}
+    .bar5{ width: 45%;}
+    .bar6{ width: 50%;}
+    .bar7{ width: 65%;}
+
+/*Projects Styling*/
+
+.projectContainer{
+    padding: 1rem 6rem;
+    text-align: center;
+}
+
+.projectContainer h2{
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+.Projects{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px,1fr));
+    gap: 20px;
+}
+
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.projectCard h4{
+    font-size: 24px;
+    align-self: center;
+}
+
+.projectCard p{
+    font-size: 18px;
+    align-self: center;
+}
+
+.projectCard a {
+    text-decoration:underline;
+    align-self: center;
+    padding: 0.5rem;
+}
+
+/*Certification Styling*/
+.certifications{
+    padding: 1rem 6rem;
+}
+
+.certifications h2{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 0.5rem;
+}
+
+.certificationCard{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.certificationCard img{
+    width: 100%;
+}
+
+.certificationText{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.certificationText h4{
+    font-size: 24px;
+}
+
+.certificationText p {
+    font-size: 18px;
+}
+
+/*Footer styling*/
+.footer{
+    padding: 1rem 6rem;
+    text-align: center;
+}
