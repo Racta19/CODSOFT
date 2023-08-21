@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Karla', sans-serif;
+    background: #ACBFB2;
+    color: #404040;
 }
 
 /*Navigation Styling*/
@@ -35,6 +39,14 @@ a{
     padding: 0 1rem;
 }
 
+.navigationLinks a{
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.navigationLinks a:hover{
+    background: linear-gradient(28deg, #acbfb2 0%, #df5e5e 100%)
+}
 /*About Me Styling*/
 .aboutMe{
     padding: 1rem 6rem;
@@ -46,11 +58,10 @@ a{
     flex: 1;
 }
 
-.aboutMe > img{
+.aboutMeImg {
     flex: 0.5;
-    width: 150px;
+    width: 5px;
     object-fit: cover;
-    padding-left: 20px;
     border-radius: 50%;
 }
 
@@ -74,9 +85,13 @@ a{
     border-radius: 50%;
 }
 
+.contactMe{
+    font-size: 20px;
+    padding-bottom: 2.8rem;
+}
+
 .aboutMeButton{
-    display: inline;
-    background: #d8d1d1;
+    background: #CCCCCC;
     font-size: 20px;
     border: none;
     border-radius: 50px;
@@ -85,6 +100,10 @@ a{
     cursor: pointer;
 }
 
+.aboutMeButton:hover{
+    background: linear-gradient(28deg, #acbfb2 0%, #df5e5e 100%);
+    color: #404040;
+}
 /*Skills Styling*/
 
 .skills{
@@ -106,20 +125,19 @@ a{
 .skillCard h4{
     font-size: 20px;
     padding-right: 1.5rem;
+    align-self: start;
 }
 
 .profiencyContainer{
-    width: 100%;
-    border-radius: 5%;
-
+    width: 35%;
+    border-radius: 10px;
+    background-color: #CCCCCC;
     overflow: hidden;
-    flex: 1;
 }
 
 .profiencyBar{
-    flex: 1;
     height: 20px;
-    background-color: antiquewhite;
+    background-color: #9ED29E;
     border-radius: 10px;
 }
 
@@ -136,7 +154,7 @@ a{
 
 .projectContainer{
     padding: 1rem 6rem;
-    text-align: center;
+    text-align: left;
 }
 
 .projectContainer h2{
@@ -154,22 +172,44 @@ a{
     display: flex;
     flex-direction: column;
     border: 1px solid;
+    align-items: center;
+    background: #fff;
+    padding: 0 0.5rem;
 }
 
+.projectCard img{
+    padding: 1rem 0;
+    background: #fff;
+}
 .projectCard h4{
     font-size: 24px;
-    align-self: center;
+    align-self: self-start;
+    padding: 0 0.8rem;
+    z-index: 2;
+    background: #fff;
 }
 
 .projectCard p{
     font-size: 18px;
-    align-self: center;
+    align-self: self-start;
+    padding: 0.5rem 0.8rem;
+    background: #fff;
+    z-index: 2;
 }
 
 .projectCard a {
     text-decoration:underline;
-    align-self: center;
-    padding: 0.5rem;
+    align-self: self-start;
+    padding: .8rem 1rem;
+    z-index: 2;
+    background: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.projectCard a:hover{
+    background: linear-gradient(166deg, rgba(172,191,178,1) 0%, rgba(64,64,64,1) 100%);
+    border-radius: 20px;
+    color: #d8e2db;
 }
 
 /*Certification Styling*/
@@ -178,7 +218,7 @@ a{
 }
 
 .certifications h2{
-    text-align: center;
+    text-align: left;
     font-size: 24px;
     padding-bottom: 0.5rem;
 }
@@ -190,7 +230,7 @@ a{
 }
 
 .certificationCard img{
-    width: 100%;
+    width: 250px;
 }
 
 .certificationText{
