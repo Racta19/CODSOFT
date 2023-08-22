@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Calculator{
+    padding: 1rem 6rem;
+}
+
+#result {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+.buttons{
+    padding: 0.8rem;
+}
+
+button{
+    cursor: pointer;
+    font-size: 24px;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.row1 .row2 .row3 .row4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding-top: 2%;
+}
