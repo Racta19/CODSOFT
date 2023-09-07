@@ -1,0 +1,107 @@
+.layout{
+    display:  grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+
+/* SIDEBAR */
+.sideBarContainer{
+    padding-top: 5%;
+}
+
+.sidebar{
+    color: #a28d5d;
+    overflow-x: hidden;
+    transition: 0.3s;
+    position: absolute;
+    z-index: 1;
+}
+
+.sidebar.open{
+    height: 100vh;
+    background: #e4dac5;
+}
+
+/* Hamberger Icon Settings */
+.sidebarIcon {
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bar{
+    width: 22px;
+    height: 3px;
+    margin: 2px 0;
+    background-color: #A28D5D;
+    border-radius: 20px;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    color: #33322e;
+    padding: 2rem;
+    font-size: 22px;
+}
+
+.sideBarLinks{
+    display: none;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.sideBarLinks.open{
+    display:flex;
+    flex-direction: column;
+}
+/* LOGO*/
+.logo{
+    padding-left: 2rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/*LOGIN AND AUTH*/
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 45PX;
+
+}
+.navbar > button{
+    background-color: inherit;
+    border: none ;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #A28D5D;
+    border-bottom:1px solid #f5f5f5;
+    text-align: center;
+}
+
+.navbar > button:hover{
+    border-bottom:1px solid #7e7663;
+}
+
+@media screen and (max-width: 720px) {
+    .layout{
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .sideBarContainer{
+        padding-top: 5px;
+        padding-left: 50%;
+    }
+    .navbar{
+        padding-bottom: 40px;
+        padding-right: 50px;
+    }
+    .logo{
+    padding-left: 10px;
+    }
+    .navbar > button{
+        font-size: 15px;
+    }
+}

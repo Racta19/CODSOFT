@@ -1,0 +1,21 @@
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px rgba(162, 93, 148,0.3);
+    color: #a28d5d;
+}
+.footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img{
+    width: 170px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
